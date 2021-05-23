@@ -1,3 +1,50 @@
-body{
-    background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+body {
+  background-image: url(../Images/bg1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Raleway", sans-serif;
 }
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+table {
+  margin: 0;
+}
+#tablazat {
+  max-width: 850px;
+  margin: 0;
+  
+}
+
+td {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+#dropdownList {
+  margin: 10px;
+  width: 100px;
+}
+#logo {
+  width: 100px;
+  margin: 10px;
+  background-color: aliceblue;
+}
+#tablazat a {
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+}
+#tablazat a:hover{
+    display: inline-block;
+    transform: scale(1.1,1.1);
+    transition: .4s;
+}
+
+
