@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 body {
   background-image: url(../Images/bg1.png);
@@ -6,6 +7,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Raleway", sans-serif;
+  background-blend-mode: multiply;
+  background-color: rgba(000, 000, 000, 0.5);
 }
 
 header {
@@ -19,9 +22,19 @@ table {
 #tablazat {
   max-width: 850px;
   margin: 0;
-  
 }
-
+.tartalom{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  height: 200px;
+}
+h1{
+  color:antiquewhite;
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  animation: megjelenes 2s linear forwards;
+}
 td {
   color: white;
   font-size: 20px;
@@ -32,19 +45,62 @@ td {
   width: 100px;
 }
 #logo {
-  width: 100px;
+  position: relative;
   margin: 10px;
-  background-color: aliceblue;
+}
+#logo img{
+  width: 100px;
+  height: 100px;
+  animation: forgas 4s linear infinite;
 }
 #tablazat a {
   text-decoration: none;
   color: white;
+  
+}
+#tablazat a:hover {
+  display: inline-block;
+  transform: scale(1.1,1.1);
   transition: .4s;
 }
-#tablazat a:hover{
-    display: inline-block;
-    transform: scale(1.1,1.1);
-    transition: .4s;
+.megjelenoSzoveg {
+  position: absolute;
+  color: rgb(235, 235, 235);
+  bottom: 10%;
+  left: -30;
+  
+}
+.megjelenoSzoveg h2 {
+  text-align: justify;
+  width: 500px;
+  animation: szoveg 4s linear forwards;
+}
+@keyframes szoveg {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(30vh);
+    opacity: 1;
+  }
+}
+@keyframes megjelenes{
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 
