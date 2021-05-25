@@ -23,13 +23,13 @@ table {
   max-width: 850px;
   margin: 0;
 }
-.tartalom{
+.foSzoveg{
   display: flex;
   justify-content: center;
   margin-top: 40px;
   height: 200px;
 }
-h1{
+#megjelenoFoSzoveg{
   color:antiquewhite;
   font-family: 'Courgette', cursive;
   font-size: 60px;
@@ -62,6 +62,8 @@ td {
   display: inline-block;
   transform: scale(1.1,1.1);
   transition: .4s;
+  
+  border-image: url(../Images/border.png);
 }
 .megjelenoSzoveg {
   position: absolute;
@@ -102,5 +104,35 @@ td {
     opacity: 1;
   }
 }
-
-
+.main{
+  color:white;
+  width: 1000px;
+  margin: 0 auto;
+  
+}
+.main p{
+  margin : 0;
+  text-align: justify;
+}
+h1{
+  font-family: 'Courgette', cursive;
+  color:#faebd7; 
+  
+}
+h2{
+  font-family: 'Courgette', cursive;
+  color:#faebd7;
+  margin-top: 40px 
+  
+}
+#kep{
+  text-align: center;
+  padding: 10px;
+  
+}
+#kep img{
+  width: 60%;
+  height: 60%;
+  border: 2px solid white;
+  
+}
