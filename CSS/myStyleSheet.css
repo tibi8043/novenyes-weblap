@@ -2,19 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 body {
-  background-image: url(../Images/bg1.png);
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Raleway", sans-serif;
-  background-blend-mode: multiply;
-  background-color: rgba(000, 000, 000, 0.5);
+  
+  
 }
 
 header {
+  
   text-align: center;
   display: flex;
   justify-content: space-between;
+  
+  
 }
 table {
   margin: 0;
@@ -105,9 +107,13 @@ td {
   }
 }
 .main{
-  color:white;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
   width: 1000px;
   margin: 0 auto;
+  padding: 30px;
+  font-size: 20px;
   
 }
 .main p{
@@ -135,4 +141,19 @@ h2{
   height: 60%;
   border: 2px solid white;
   
+}
+#bal{
+  float: left;
+}
+#jobb{
+  float: right;
+  
+}
+.viragok{
+  height: 600px;
+  width: 200px;
+}
+.egész{
+  display: flex;
+  justify-content: space-between;
 }
