@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #e0e2ed;
   
   
 }
@@ -140,20 +141,20 @@ h2{
   width: 60%;
   height: 60%;
   border: 2px solid white;
+
   
 }
 #bal{
   float: left;
+  position: relative;
 }
 #jobb{
   float: right;
+  position: relative;
   
 }
 .viragok{
   height: 600px;
-  width: 200px;
-}
-.egész{
-  display: flex;
-  justify-content: space-between;
+  width: 400px;
+  position: fixed;
 }
