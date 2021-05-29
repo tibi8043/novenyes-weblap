@@ -1,23 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 body {
-  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #e0e2ed;
-  
-  
 }
 
 header {
-  
   text-align: center;
   display: flex;
   justify-content: space-between;
-  
-  
 }
 table {
   margin: 0;
@@ -26,20 +20,18 @@ table {
   max-width: 850px;
   margin: 0;
 }
-.foSzoveg{
+.foSzoveg {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  height: 200px;
 }
-#megjelenoFoSzoveg{
-  color:antiquewhite;
-  font-family: 'Courgette', cursive;
+#megjelenoFoSzoveg {
+  color: rgb(43, 26, 44);
+  font-family: "Courgette", cursive;
   font-size: 60px;
   animation: megjelenes 2s linear forwards;
 }
 td {
-  color: white;
+  
   font-size: 20px;
   padding: 20px;
 }
@@ -51,29 +43,27 @@ td {
   position: relative;
   margin: 10px;
 }
-#logo img{
+#logo img {
   width: 100px;
   height: 100px;
   animation: forgas 4s linear infinite;
 }
 #tablazat a {
   text-decoration: none;
-  color: white;
-  
+  color: black;
 }
 #tablazat a:hover {
   display: inline-block;
-  transform: scale(1.1,1.1);
-  transition: .4s;
-  
+  transform: scale(1.1, 1.1);
+  transition: 0.4s;
+
   border-image: url(../Images/border.png);
 }
 .megjelenoSzoveg {
   position: absolute;
-  color: rgb(235, 235, 235);
+  
   bottom: 10%;
   left: -30;
-  
 }
 .megjelenoSzoveg h2 {
   text-align: justify;
@@ -92,69 +82,66 @@ td {
     opacity: 1;
   }
   100% {
-    transform: translateX(30vh);
+    transform: translateX(10vh);
     opacity: 1;
   }
 }
-@keyframes megjelenes{
-  0%{
+@keyframes megjelenes {
+  0% {
     opacity: 0;
   }
-  30%{
+  30% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-.main{
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: rgb(0, 0, 0);
+.main {
   width: 1000px;
   margin: 0 auto;
   padding: 30px;
   font-size: 20px;
-  
 }
-.main p{
-  margin : 0;
+.main p {
+  margin: 0;
   text-align: justify;
 }
-h1{
-  font-family: 'Courgette', cursive;
-  color:#faebd7; 
-  
+h1 {
+  font-family: "Courgette", cursive;
+  color: rgb(43, 26, 44);
 }
-h2{
-  font-family: 'Courgette', cursive;
-  color:#faebd7;
-  margin-top: 40px 
-  
+h2 {
+  font-family: "Courgette", cursive;
+  color: rgb(43, 26, 44);
+  margin-top: 40px;
 }
-#kep{
+
+#kep {
   text-align: center;
   padding: 10px;
-  
 }
-#kep img{
+#kep img {
   width: 60%;
   height: 60%;
   border: 2px solid white;
-
-  
 }
-#bal{
-  float: left;
-  position: relative;
-}
-#jobb{
-  float: right;
-  position: relative;
-  
-}
-.viragok{
-  height: 600px;
-  width: 400px;
+#bal {
   position: fixed;
+  left: 0;
+}
+#bal img {
+  width: 300px;
+}
+
+#jobb {
+  position: fixed;
+  right: 0;
+}
+#jobb img {
+  width: 300px;
+}
+#content {
+  display: flex;
+  justify-content: space-between;
 }
