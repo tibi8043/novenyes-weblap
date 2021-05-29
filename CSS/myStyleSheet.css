@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  
   background-color: #e0e2ed;
 }
 
@@ -12,6 +10,7 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  height: 75px;
 }
 table {
   margin: 0;
@@ -60,8 +59,6 @@ td {
   border-image: url(../Images/border.png);
 }
 .megjelenoSzoveg {
-  position: absolute;
-  
   bottom: 10%;
   left: -30;
 }
@@ -69,6 +66,12 @@ td {
   text-align: justify;
   width: 500px;
   animation: szoveg 4s linear forwards;
+}
+#slider{
+  width: 622px;
+  height: 350px;
+  margin: 0 auto;
+  
 }
 @keyframes szoveg {
   0% {
@@ -100,7 +103,6 @@ td {
 .main {
   width: 1000px;
   margin: 0 auto;
-  padding: 30px;
   font-size: 20px;
 }
 .main p {
@@ -120,6 +122,7 @@ h2 {
 #kep {
   text-align: center;
   padding: 10px;
+  
 }
 #kep img {
   width: 60%;
@@ -129,6 +132,7 @@ h2 {
 #bal {
   position: fixed;
   left: 0;
+  margin-top: 25px;
 }
 #bal img {
   width: 300px;
@@ -137,6 +141,7 @@ h2 {
 #jobb {
   position: fixed;
   right: 0;
+  margin-top: 25px;
 }
 #jobb img {
   width: 300px;
@@ -144,4 +149,6 @@ h2 {
 #content {
   display: flex;
   justify-content: space-between;
+  background-size: contain;
+  
 }
