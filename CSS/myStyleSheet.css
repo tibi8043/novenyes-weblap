@@ -3,6 +3,7 @@
 
 body {  
   background-color: #e0e2ed;
+  
 }
 
 header {
@@ -53,7 +54,7 @@ td {
 #tablazat a:hover {
   display: inline-block;
   transform: scale(1.1, 1.1);
-  transition: 0.4s;
+  transition: all 0.4s ease-in-out;
 
   border-image: url(../Images/border.png);
 }
@@ -65,6 +66,9 @@ td {
   text-align: justify;
   width: 500px;
   animation: szoveg 4s linear forwards;
+}
+#bejelentkezesContent{
+  
 }
 #slider{
   width: 622px;
