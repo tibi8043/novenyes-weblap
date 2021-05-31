@@ -7,6 +7,12 @@ function $(id) {
 function init() {
   
 }
+function regisztracio(){
+
+}
+function bejelentkezes(){
+  
+}
 
 
 
