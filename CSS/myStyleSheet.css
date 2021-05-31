@@ -136,6 +136,7 @@ header h2 {
   position: fixed;
   left: 0;
   margin-top: 25px;
+  z-index: -1;
 }
 #bal img {
   width: 300px;
@@ -143,6 +144,7 @@ header h2 {
 
 #jobb {
   position: fixed;
+  z-index: -1;
   right: 0;
   margin-top: 25px;
 }
@@ -176,6 +178,10 @@ header h2 {
   height: 90px;
   margin-left: 70px;
 }
-
+.kozepre{
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
 
 
