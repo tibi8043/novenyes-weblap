@@ -5,14 +5,17 @@ function $(id) {
 }
 
 function init() {
-  
+  $("gomb").addEventListener("click", bejelentkezes, false);
 }
-function regisztracio(){
 
-}
 function bejelentkezes(){
+<<<<<<< Updated upstream
 
+=======
+  $("urlap").innerHTML='<p id="login">Sikeres Bejelentkezés!</p><br> <div"><a href="../index.html" id="visszaafooldalra"><p id="visszaAFoOldalra">Vissza a főoldalra</p></a></div>';
+>>>>>>> Stashed changes
 }
+
 
 
 

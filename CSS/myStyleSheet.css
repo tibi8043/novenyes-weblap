@@ -70,9 +70,17 @@ a.items {
   font-family: 'Indie Flower', cursive;
   animation: szoveg 4s linear forwards;
 }
-#bejelentkezesContent{
-  
+#login{
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
 }
+
+#visszaAFoOldalra{
+  text-align: center;
+}
+
 #slider{
   width: 622px;
   height: 350px;
@@ -148,6 +156,7 @@ header h2 {
 #bal img {
   width: 250px;
   height: 450px;
+  z-index: -1;
 }
 
 #jobb {
@@ -159,8 +168,8 @@ header h2 {
 #jobb img {
   width: 250px;
   height: 450px;
+  z-index: -1;
 }
-
 
 #urlap{
   border-radius: 20px;
@@ -168,13 +177,16 @@ header h2 {
   background-color: rgba(157,153,181,0.6);
   margin: 50px auto;    
   width: 400px;
-
+  
 }
 
 #urlap h2{
   font-family: "Courgette", cursive;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+#gomb{
+  margin-bottom: 115px;
 }
 
 #urlap img{
@@ -196,9 +208,15 @@ header h2 {
 
 footer{
   background-color: #d0d3e4;
-  
-
 }
+
+#loginFooter{
+  background-color: #d0d3e4;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
 .kartya{
   background-color: #d0d3e4;
 }
