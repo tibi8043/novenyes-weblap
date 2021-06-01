@@ -9,11 +9,7 @@ function init() {
 }
 
 function bejelentkezes(){
-<<<<<<< Updated upstream
-
-=======
   $("urlap").innerHTML='<p id="login">Sikeres Bejelentkezés!</p><br> <div"><a href="../index.html" id="visszaafooldalra"><p id="visszaAFoOldalra">Vissza a főoldalra</p></a></div>';
->>>>>>> Stashed changes
 }
 
 
