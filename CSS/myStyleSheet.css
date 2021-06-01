@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {  
   background-color: #e0e2ed;
@@ -160,12 +161,7 @@ header h2 {
   width: 250px;
   height: 450px;
 }
-#content {
-  display: flex;
-  justify-content: space-between;
-  background-size: contain;
-  
-}
+
 
 #urlap{
   border-radius: 20px;
@@ -200,10 +196,41 @@ header h2 {
 }
 
 footer{
-  background-color: beige;
+  background-color: #d0d3e4;
   
 
 }
 .kartya{
-  background-color: rgba(153, 148, 156, 0.616);
+  background-color: #d0d3e4;
 }
+.rovidLeiras{
+  
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  
+
+}
+.card-body img{
+  width: 45px;
+  height: 45px;
+}
+#jelmagyarazat img{
+  width: 30px;
+  height: 30px;
+}
+#jelmagyarazat td{
+  width: 200px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  
+  
+}
+#jelmagyarazat td img{
+  float:right;
+}
+#jelmagyarazat{
+  
+}
+
