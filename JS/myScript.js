@@ -11,7 +11,7 @@ function regisztracio(){
 
 }
 function bejelentkezes(){
-  
+
 }
 
 

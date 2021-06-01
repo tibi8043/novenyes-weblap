@@ -18,6 +18,7 @@
     </script>
     <script src="../JS/bootstrap.min.js" type="text/javascript"></script>
     <script src="../JS/myScript.js" type="text/javascript"></script>
+    <script src="../JS/viragok.js" type="text/javascript"></script>
     <title>Szobanövények</title>
 </head>
 
@@ -38,10 +39,10 @@
         </div>
         <table id="tablazat">
             <tr>
-                <td><a id="1" href="disznovenyekrol.html">A dísznövényekről</a></td>
-                <td><a id="2" href="szobanovenyek.html">Szobanövények</a></td>
-                <td><a id="3" href="kertinovenyek.html">Kerti növények</a></td>
-                <td><a id="4" href="mediterrannovenyek.html">Mediterrán növények</a></td>
+                <td><a class="items" href="disznovenyekrol.html">A dísznövényekről</a></td>
+                <td><a class="items" href="szobanovenyek.html">Szobanövények</a></td>
+                <td><a class="items" href="kertinovenyek.html">Kerti növények</a></td>
+                <td><a class="items" href="mediterrannovenyek.html">Mediterrán növények</a></td>
             </tr>
         </table>
         <div id="logo">
@@ -57,7 +58,6 @@
     <div id="jobb">
         <img src="../Images/virag1.png">
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
@@ -67,13 +67,13 @@
                     viszonylag kevés gondozásért cserébe teszik. Keressen egy üres ablakpárkányt, polcot, vagy akár egy
                     félreeső
                     zugot a szobában a szobanövények számára.
-                    
-                </p>
+                </p><br>
+                
             </div>
         </div>
+        <h2>Jelmagyarázat:</h2>
         <div class="row mb-3">
-            <div class="col-12 ">
-                <h2>Jelmagyarázat</h2>
+            <div class="col-12 d-flex justify-content-center">
                 <table id="jelmagyarazat">
                     <tr>
                         <td>Sok Víz kell neki <img src="../Images/Icons/water3.png"></td>
@@ -95,26 +95,32 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4 d-flex justify-content-center">
-                <select class="form-control text-center">
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="viz" selected="1">
+                    <option>Összes</option>
                     <option>Viz1 <img src="../Images/Icons/water.png"></option>
                     <option>Viz2 <img src="../Images/Icons/water2.png"></option>
-                    <option><img src="../Images/Icons/water3.png"> </option>
+                    <option>Viz3 </option>
                 </select>
             </div>
-            <div class="col-4 d-flex justify-content-center">
-                <select class="form-control text-center">
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="nap" selected="1">
+                    <option>Összes</option>
                     <option>nap1</option>
                     <option>nap2</option>
                     <option>nap3</option>
                 </select>
             </div>
-            <div class="col-4 d-flex justify-content-center">
-                <select class="form-control text-center">
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="homerseklet" selected="1">
+                    <option>Összes</option>
                     <option>ho1</option>
                     <option>ho2</option>
                     <option>ho3</option>
                 </select>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <button class=" btn btn-outline-light primary btn-secondary" id="kereses">Keresés</button>
             </div>
         </div>
         <div class="row mt-3 ">
@@ -136,13 +142,13 @@
             <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
                 <div class="card">
                     <img src="../Images/szobanovenyek/noveny2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="zolborsolevelSzenecio">
+                    <div class="card-body" id="zoldborsolevelSzenecio">
                         <p class="card-text text-justify">Some quick example text to build on the card title and make up
                             the bulk
                             of the card's content.</p>
                         <p class="card-text text-center">
-                            <img id="viz" src="../Images/Icons/water3.png" alt="Szereti a vizet">
-                            <img id="nap" src="../Images/Icons/sun2.png">
+                            <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                            <img id="nap" src="../Images/Icons/sun3.png">
                             <img id="ho" src="../Images/Icons/thermometer3.png">
                         </p>
                     </div>
@@ -154,7 +160,11 @@
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
-                        <a href="#" class="btn btn-primary">1000 Ft</a>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water2.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer.png">
+                            </p>
                     </div>
                 </div>
             </div>
