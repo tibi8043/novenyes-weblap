@@ -24,6 +24,7 @@ table {
 .foSzoveg {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 #megjelenoFoSzoveg {
   color: rgb(43, 26, 44);
@@ -79,6 +80,9 @@ a.items {
 
 #visszaAFoOldalra{
   text-align: center;
+}
+#visszaAFoOldalra a{
+  text-decoration: none;
 }
 
 #slider{
