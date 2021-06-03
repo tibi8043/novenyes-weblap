@@ -61,9 +61,14 @@ a.items {
 }
 .megjelenoSzoveg {
   bottom: 10%;
-  left: -30;
+  left: -30px;
   font-family: 'Indie Flower', cursive;
 }
+h5{
+  font-family: "Courgette", cursive;
+  color: rgb(43, 26, 44);
+}
+
 
 #megjelenoSzovegH2{
   text-align: center;
@@ -76,6 +81,13 @@ a.items {
   font-size: 30px;
   text-align: center;
   margin: 0 auto;
+}
+
+#loginFooter{
+  background-color: #d0d3e4;
+  position:fixed;
+  bottom:0;
+  width:100%;
 }
 
 #visszaAFoOldalra{
@@ -122,10 +134,14 @@ a.items {
   width: 1000px;
   margin: 20px auto;
   font-size: 20px;
-  
-  
-  
+
 }
+.card {
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+  background-color: #babfdd75;
+}
+
+
 .main p {
   margin: 0;
   text-align: justify;
@@ -181,7 +197,7 @@ header h2 {
   background-color: rgba(157,153,181,0.6);
   margin: 50px auto;    
   width: 400px;
-  height: 500px;
+  height: 570px;
   
 }
 
@@ -191,7 +207,7 @@ header h2 {
 }
 
 #gomb{
-  margin-bottom: 115px;
+  margin-left: 50px;
 }
 
 #urlap img{
@@ -215,17 +231,13 @@ footer{
   background-color: #d0d3e4;
 }
 
-
 .kartya{
   background-color: #d0d3e4;
 }
-.rovidLeiras{
-  
+.rovidLeiras{ 
   font-size: 20px;
   text-align: justify;
   font-family: 'Lato', sans-serif;
-  
-
 }
 .card-body img{
   width: 45px;
@@ -247,9 +259,7 @@ footer{
 #jelmagyarazat td img{
   float:right;
 }
-#jelmagyarazat{
-  
-}
+
 #szenecio{
   display: block;
 }
