@@ -90,7 +90,35 @@
 
             </div>
         </div>
-        
+        <div class="row">
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="viz" selected="1">
+                    <option value="1">Összes</option>
+                    <option value="2">Viz1 <img src="../Images/Icons/water.png"></option>
+                    <option value="3">Viz2 <img src="../Images/Icons/water2.png"></option>
+                    <option value="4">Viz3 </option>
+                </select>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="nap">
+                    <option oncl="filterSelection('all')"> Összes</option>
+                    <option>nap1</option>
+                    <option>nap2</option>
+                    <option>nap3</option>
+                </select>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <select class="form-control text-center" id="homerseklet" selected="1">
+                    <option>Összes</option>
+                    <option>ho1</option>
+                    <option>ho2</option>
+                    <option>ho3</option>
+                </select>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <input type="text" placeholder="Keresés" class="filter" id="filter">
+            </div>
+        </div>
         <div id="egész">
             <div class="row mt-3" id="egész">
                 <div class=" col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
