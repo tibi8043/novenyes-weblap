@@ -17,10 +17,12 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="../JS/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../JS/e-search.min.js"> </script>
     <script src="../JS/myScript.js" type="text/javascript"></script>
     <script src="../JS/viragok.js" type="text/javascript"></script>
     <title>Szobanövények</title>
 </head>
+
 <body>
     <header>
         <div id="dropdownList">
@@ -30,7 +32,7 @@
                     Menü
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    
+
                     <a class="dropdown-item" href="bejelentkezes.html">Bejelentkezés</a>
                     <a class="dropdown-item" href="#">Kapcsolat</a>
                 </div>
@@ -67,7 +69,7 @@
                     félreeső
                     zugot a szobában a szobanövények számára.
                 </p><br>
-                
+
             </div>
         </div>
         <h2>Jelmagyarázat:</h2>
@@ -90,7 +92,7 @@
                         <td>Kevés hő <img src="../Images/Icons/thermometer.png"></td>
                     </tr>
                 </table>
-                
+
             </div>
         </div>
         <div class="row">
@@ -103,8 +105,8 @@
                 </select>
             </div>
             <div class="col-3 d-flex justify-content-center">
-                <select class="form-control text-center" id="nap" selected="1">
-                    <option>Összes</option>
+                <select class="form-control text-center" id="nap">
+                    <option oncl="filterSelection('all')"> Összes</option>
                     <option>nap1</option>
                     <option>nap2</option>
                     <option>nap3</option>
@@ -119,103 +121,144 @@
                 </select>
             </div>
             <div class="col-3 d-flex justify-content-center">
-                <button class=" btn btn-outline-light primary btn-secondary" id="kereses">Keresés</button>
+                <input type="text" placeholder="Keresés" class="filter" id="filter">
             </div>
         </div>
-        <div class="row mt-3 ">
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Zöldborsólevelű szeneció</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-
-                        <p class="card-title">
-                            <span></span>
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body" id="zoldborsolevelSzenecio">
-                        <p class="card-text text-justify">Some quick example text to build on the card title and make up
-                            the bulk
-                            of the card's content.</p>
-                        <p class="card-text text-center">
-                            <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
-                            <img id="nap" src="../Images/Icons/sun3.png">
-                            <img id="ho" src="../Images/Icons/thermometer3.png">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center ">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
+        <div id="egész">
+            <div class="row mt-3" id="egész">
+                <div class=" col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
                             <p class="card-text text-center">
-                                <img id="viz" src="../Images/Icons/water2.png" alt="Szereti a vizet">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
                                 <img id="nap" src="../Images/Icons/sun3.png">
-                                <img id="ho" src="../Images/Icons/thermometer.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
                             </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center">
-                <div class="card">
-                    <img src="../Images/szobanovenyek/noveny8.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
-                    </div>
-                </div>
-            </div>
 
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Büdöske</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rózsa</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-md-4 col-lg-3 mb-3  d-flex justify-content-center " id="col">
+                    <div class="card">
+                        <img src="../Images/szobanovenyek/noveny1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Teszt virag</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <p class="card-text text-center">
+                                <img id="viz" src="../Images/Icons/water.png" alt="Szereti a vizet">
+                                <img id="nap" src="../Images/Icons/sun3.png">
+                                <img id="ho" src="../Images/Icons/thermometer3.png">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <footer>
         <div class="card kartya">
